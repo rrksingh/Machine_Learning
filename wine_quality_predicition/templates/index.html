@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>wine quality Prediction Using Machine Learning</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <h1>wine quality Prediction</h1>
+
+    <form action = "{{url_for('predict')}}" method="post">
+
+        <input type="float" name="fixed acidity" placeholder="fixed acidity"required="required">
+            <br>
+
+        <input type="float" name="volatile acidity" placeholder="volatile acidity"required="required">
+            <br>
+
+        <input type="float" name="citric acid" placeholder="citric acid"required="required">
+            <br>
+
+        <input type="float" name="residual sugar" placeholder="residual sugar"required="required">
+            <br>
+      
+        <input type="float" name="chlorides" placeholder="chlorides"required="required">
+            <br>
+            
+        <input type="float" name="free sulfur dioxide" placeholder="free sulfur dioxide"required="required">
+            <br>
+
+        <input type="float" name="total sulfur dioxide" placeholder="total sulfur dioxide"required="required">
+            <br>
+
+        <input type="float" name="density" placeholder="density"required="required">
+            <br>
+
+        <input type="float" name="pH" placeholder="pH"required="required">
+            <br>
+      
+        <input type="float" name="sulphates" placeholder="sulphates"required="required">
+            <br>
+            
+        <input type="float" name="alcohol" placeholder="alcohol"required="required">
+            <br>
+        <br><br>
+        <button type="submit">Submit</button>
+        <i>{{prediction_text}}</i>
+
+    </form>
+
+
+
+</body>
+</html>
+

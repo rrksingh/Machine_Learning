@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Salary Prediction on the basis of YearsExperience Using Machine Learning</title>
+</head>
+<body>
+    <h1>Salary Prediction Using ML</h1>
+
+    <form action = "{{url_for('predict')}}" method="post">
+
+        <input type="float" name="YearsExperience" placeholder="YearsExperience"required="required">
+            <br>
+
+      
+        <br><br>
+        <button type="submit">Submit</button>
+        
+        <br><br>
+        Salary estimation:<br>
+        <i>{{prediction_text}}</i>
+
+    </form>
+
+
+
+</body>
+</html>
+

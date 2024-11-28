@@ -1,0 +1,29 @@
+
+
+label{
+    width: 8cm;
+}
+form{
+    width: 400px;
+    margin: auto;
+    background-color: grey;
+    padding: 20px;
+}
+
+form div{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+h1{
+    font-size:larger; 
+    background-color: azure; 
+    text-align: center;
+    padding: 10px;
+}
+
+form i{
+    font-style: italic;
+    font-size: medium;
+    color: rgb(73, 236, 9);
+}
